@@ -1,0 +1,726 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #444;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #000000;
+}
+
+/* Кнопки */
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.cta-button, .price-button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover, .price-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для кнопок мессенджеров */
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25d366, #128C7E);
+}
+
+.telegram-btn {
+    background: linear-gradient(135deg, #0088cc, #005999);
+}
+
+.whatsapp-btn:hover {
+    background: linear-gradient(135deg, #128C7E, #25d366);
+}
+
+.telegram-btn:hover {
+    background: linear-gradient(135deg, #005999, #0088cc);
+}
+
+.messenger-btn {
+    padding: 15px 25px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.header {
+    background-color: #000000;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: Trattatello, fantasy;
+}
+
+.nav {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Секции с разным фоном */
+.hero {
+    background: linear-gradient(135deg, rgba(247, 247, 247, 0.705) 0%, rgba(255, 255, 255, 0) 100%), 
+                url('images/image (1).jpeg') center/cover no-repeat;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.about {
+    background-color: rgb(227 227 227 / 79%);
+}
+
+.products {
+    background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
+}
+
+.contact {
+    background-color: #f0f0f0;
+}
+
+/* Hero секция */
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* О нас */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.messenger-buttons {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    min-width: 400px;
+    object-fit: cover;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Слайдер продукции */
+.products-slider {
+    position: relative;
+}
+
+.slider-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: white;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-image {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.slide-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slide-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.slide-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.slider-btn {
+    background-color: #000000;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    color: rgb(0, 0, 0);
+}
+
+.slider-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #000000;
+}
+
+/* Контакты */
+.contact-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-info > p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-buttons .contact-btn {
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 250px;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.contact-buttons .contact-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contact-buttons .contact-btn i {
+    font-size: 1.5rem;
+}
+
+.contact-note {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-note p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-note i {
+    color: #000000;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 25px 0;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.email {
+    flex: 1;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+
+
+/* Плавающие кнопки мессенджеров */
+.messenger-floats {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.whatsapp-float, .telegram-float {
+    width: 60px;
+    height: 60px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float {
+    background-color: #25d366;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+    animation: pulse-whatsapp 2s infinite;
+}
+
+.telegram-float {
+    background-color: #0088cc;
+    box-shadow: 0 4px 20px rgba(0, 136, 204, 0.5);
+    animation: pulse-telegram 2s infinite;
+    animation-delay: 1s;
+}
+
+.whatsapp-float:hover, .telegram-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float:hover {
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
+}
+
+.telegram-float:hover {
+    box-shadow: 0 6px 25px rgba(0, 136, 204, 0.7);
+}
+
+/* Анимация пульсации для WhatsApp */
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Анимация пульсации для Telegram */
+@keyframes pulse-telegram {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(0, 136, 204, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
+    }
+}
+
+/* Адаптация для 1100px и меньше - вертикальная компоновка */
+@media (max-width: 1100px) {
+    .slider-container {
+        height: 700px; /* Увеличиваем высоту для вертикального расположения */
+    }
+    
+    .slide {
+        flex-direction: column;
+        height: 700px;
+    }
+    
+    .slide-image {
+        flex: 1;
+        height: 50%;
+        width: 100%;
+    }
+    
+    .slide-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .slide-content {
+        flex: 1;
+        height: 50%;
+        width: 100%;
+        padding: 30px;
+        min-width: auto;
+        text-align: center;
+    }
+    
+    .slide-buttons {
+        justify-content: center;
+    }
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 992px) {
+    .about-content,
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-content {
+        align-items: center;
+    }
+    
+    .nav-link {
+        font-size: 15px;
+    }
+
+    .slider-container {
+        height: 650px;
+    }
+    
+    .slide {
+        height: 650px;
+    }
+    
+    .slide-content {
+        padding: 25px;
+    }
+    
+    .about-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav {
+        gap: 10px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .slider-container {
+        height: 600px;
+    }
+    
+    .slide {
+        height: 600px;
+    }
+    
+    .slide-content {
+        padding: 20px;
+    }
+    
+    .slide-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .slide-buttons {
+        align-items: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .copyright, .email {
+        text-align: center;
+        flex: none;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+    
+    .messenger-floats {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float, .telegram-float {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .slider-container {
+        height: 550px;
+    }
+    
+    .slide {
+        height: 550px;
+    }
+    
+    .slide-content {
+        padding: 15px;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .nav-link {
+    font-size: 15px;
+    }
+}
