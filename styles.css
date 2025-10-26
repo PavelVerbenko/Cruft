@@ -742,3 +742,14 @@ button {
     min-width: 380px;
     }
 }
+
+@media (max-width: 400px) {
+    .nav {
+        gap: 4px;
+    }
+
+    .nav-link {
+        font-size: 9px;
+        font-weight: 600;
+    }
+}
