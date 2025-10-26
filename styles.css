@@ -737,4 +737,8 @@ button {
         font-size: 13px;
         padding: 10px 20px;
     }
+
+    .about-image img {
+    min-width: 380px;
+    }
 }
