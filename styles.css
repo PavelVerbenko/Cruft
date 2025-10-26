@@ -714,6 +714,15 @@ button {
     .slide-content {
         padding: 15px;
     }
+
+    .slide-content h3 {
+        font-size: 1rem;
+    }
+
+    .slide-content p {
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+}
     
     .contact-buttons {
         flex-direction: column;
@@ -721,6 +730,11 @@ button {
     }
     
     .nav-link {
-    font-size: 15px;
+    font-size: 11px;
+    }
+
+    .cta-button, .price-button {
+        font-size: 13px;
+        padding: 10px 20px;
     }
 }
