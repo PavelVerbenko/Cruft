@@ -140,8 +140,8 @@ button {
 .logo {
     font-size: 2rem;
     font-weight: 500;
-    color: #ffffff;
-    font-family: Trattatello, fantasy;
+    color: #e0cd6d;
+    font-family: Impact, fantasy;
 }
 
 .nav {
@@ -472,7 +472,20 @@ button {
     color: #ccc;
 }
 
+.email a {
+    color: #e0cd6d !important; /* Золотистый цвет как у логотипа */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
+.email a:hover {
+    color: #ffffff !important;
+    background-color: #e0cd6d;
+    text-decoration: none;
+}
 
 /* Плавающие кнопки мессенджеров */
 .messenger-floats {
